@@ -26,6 +26,7 @@ app.use(methodOverride('_method'));
 // Routes
 app.use('/', require('./routes/home'));
 app.use('/posts', require('./routes/posts')); // 1 마지막으로 posts route를 index.js에 추가해 줍니다.
+app.use('/users', require('./routes/users')); // 1 마지막으로 users route를 추가해 줍니다.
 
 // Port setting
 var port = 3000;
