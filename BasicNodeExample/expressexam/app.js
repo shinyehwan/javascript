@@ -34,6 +34,13 @@ app.get('/hyperweb2',function(req,res){
 app.get('/hypertext',function(req,res){
     res.sendfile('intro7.html');
 })
+app.get('/hyperemail',function(req,res){
+    res.sendfile('intro8.html');
+})
+app.get('/taglist',function(req,res){
+    res.sendfile('intro9.html');
+})
+
 
 app.listen(3000, function(){
     console.log('Example app listening on port 3000!');
