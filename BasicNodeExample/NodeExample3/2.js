@@ -18,18 +18,18 @@
 // }
 
 
-// var Users = [{name:'소녀시대', age:20}, {name:'걸스데이', age:22}, {name:'티아라', age:23}];
-// console.log('\nforEach 구문 사용하기');
-// Users.forEach(function(item,index){
-//     console.log('배열요소 #' + index + ' : %s', item.name);
-// })
-
 var Users = [{name:'소녀시대', age:20}, {name:'걸스데이', age:22}, {name:'티아라', age:23}];
-Users.splice(1,0,{name:'애프터스쿨', age:26});
-console.log('splic로 요소를 인덱스 1에 추가한 후');
-console.dir(Users);
-Users.splice(2,1);
-console.log('splic로 인덱스 2의 요소를 1개 삭제한 후');
-console.dir(Users);
-var Users2 = Users.slice(2,4);
-console.log(Users2);
+console.log('\nforEach 구문 사용하기');
+Users.forEach(function(item,index){
+    console.log('배열요소 #' + index + ' : %s', item.name);
+})
+
+// var Users = [{name:'소녀시대', age:20}, {name:'걸스데이', age:22}, {name:'티아라', age:23}];
+// Users.splice(1,0,{name:'애프터스쿨', age:26});
+// console.log('splic로 요소를 인덱스 1에 추가한 후');
+// console.dir(Users);
+// Users.splice(2,1);
+// console.log('splic로 인덱스 2의 요소를 1개 삭제한 후');
+// console.dir(Users);
+// var Users2 = Users.slice(2,4);
+// console.log(Users2);
